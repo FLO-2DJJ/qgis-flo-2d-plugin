@@ -1,0 +1,761 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Debug Tool &#8212; FLO-2D-User-Manual  documentation</title>
+    
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=62ba249389abaaa9ffc34bf36a076bdc1d65ee18" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/static/style.css" />
+    
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=f31d14ad54b65d19161ba51d4ffff3a77ae00456"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Help" href="Help.html" />
+    <link rel="prev" title="Mud and Sediment Transport Tool" href="Mud%20and%20Sediment%20Transport%20Tool.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../_static/Flo2D_logo.jpg" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">FLO-2D-User-Manual  documentation</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Setup:
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../installation-instructions/Installation.html">
+   Installation Instructions
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../installation-instructions/QGIS%20General%20Tools.html">
+   QGIS Tools
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Plugin Features:
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../plugin-features/Data%20Storage.html">
+   Data Storage
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../plugin-features/Plugin%20Features.html">
+   Plugin Features
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../plugin-features/View%20Options.html">
+   View Options
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Toolbar QGIS and FLO-2D:
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="FLO-2D%20Toolbar.html">
+   FLO-2D Toolbar
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="FLO-2D%20Settings.html">
+   FLO-2D Plugin Settings
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Run%20FLO-2D.html">
+   Run FLO-2D
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Import%20Geo%20Package.html">
+   Import a Geo Package
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Import%20Data%20Files.html">
+   Import FLO-2D Data Files
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Import%20Selected%20Component%20Files.html">
+   Import Selected Component Files
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Export%20Project.html">
+   Export Project
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Import%20RAS%20Channel.html">
+   Import HEC-RAS Channel
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Control%20Variables.html">
+   Control Variables
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Schematic%20to%20User%20Converter.html">
+   Schematic to User Converter
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="User%20to%20Schematic%20Converter.html">
+   User to Schematic Converter
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Channel%20Profile.html">
+   Channel Profile Tool
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="FLO-2D%20Info%20Tool.html">
+   FLO-2D Info Tool
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Grid%20Info%20Tool.html">
+   Grid Info Tool
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Levee%20Tool.html">
+   Levee Elevation Tool
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Levee%20Tool%20Walls.html">
+   Levee Tool Walls
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Hazus%20Tool.html">
+   Hazus Tool
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Tailings%20Dam%20Tool.html">
+   Tailings Dam Tool
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Mud%20and%20Sediment%20Transport%20Tool.html">
+   Mud and Sediment Transport Tool
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Debug Tool
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Help.html">
+   Help
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Widgets (Grid Tools):
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../widgets/grid-tools/Create%20a%20Grid.html">
+   Create a Grid
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../widgets/grid-tools/Sample%20Elevation%20from%20Raster.html">
+   Sample Elevation from Raster
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../widgets/grid-tools/Sample%20Elevation%20GDAL%20Grid%20Method.html">
+   Sample Elevation GDAL Grid Method
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../widgets/grid-tools/Sample%20Elevation%20from%20Points%20and%20LiDAR.html">
+   Sample Elevation from Points and LiDAR
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../widgets/grid-tools/Elevation%20Correction%20Tool.html">
+   Elevation Correction Tool
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../widgets/grid-tools/Sample%20Roughness.html">
+   Sample Roughness
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../widgets/grid-tools/Area%20and%20Width%20Reduction.html">
+   Area and Width Reduction – Buildings
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../widgets/grid-tools/Spatial%20TOL.html">
+   Spatial TOL
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../widgets/grid-tools/Spatial%20Limiting%20Froude.html">
+   Spatial Limiting Froude
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../widgets/grid-tools/Spatial%20Shallow%20n.html">
+   Spatial Shallow n
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../widgets/grid-tools/Gutters.html">
+   Gutters
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../widgets/grid-tools/No%20Exchange%20Channel.html">
+   No Exchange Channel
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../widgets/grid-tools/Hazus%20Layers.html">
+   Assign Results from Points Layer
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Widgets:
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../widgets/profile-tool/Profile%20Tool.html">
+   Profile Tool
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../widgets/cross-sections-editor/Cross%20Sections%20Editor.html">
+   Cross Sections Editor
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../widgets/boundary-condition-editor/Boundary%20Condition%20Editor.html">
+   Boundary Condition Editor
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../widgets/initial-condition-editor/Initial%20Condition%20Editor.html">
+   Initial Condition Editor
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../widgets/rain-editor/Rain%20Editor.html">
+   Rain Editor
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../widgets/schematized-channel-editor/Schematized%20Channel%20Editor.html">
+   Schematized Channel Editor
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../widgets/hydraulic-structure-editor/Hydraulic%20Structure%20Editor.html">
+   Hydraulic Structure Editor
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../widgets/street-editor/Street%20Editor.html">
+   Street Editor
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../widgets/floodplain-cross-section-editor/Floodplain%20Cross%20Section%20Editor.html">
+   Floodplain Cross Section Editor
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../widgets/infiltration-editor/Infiltration%20Editor.html">
+   Infiltration Editor
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../widgets/storm-drain-editor/Storm%20Drain.html">
+   Storm Drain Editor
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../widgets/levees-breach-editor/Levees%20Breach%20Editor.html">
+   Levees Breach Editor
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../widgets/multiple-channels-editor/Multiple%20Channel%20Editor.html">
+   Multiple Channels Editor
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Post Development Grid Modification:
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../post-development-grid-modification/Post%20Development%20Grid%20Modification.html">
+   Post Development Grid Modification
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  References:
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../References.html">
+   References
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
+            
+            <div class="navbar_extra_footer">
+            Theme by the <a href="https://ebp.jupyterbook.org">Executable Book Project</a>
+            </div>
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
+
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="../_sources/toolbar/Debug Tool.rst.txt"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.rst</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#data-warnings-and-errors">
+   Data Warnings and Errors
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#debug">
+   Debug
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#conflicts">
+   Conflicts
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#levee-crests">
+   Levee Crests
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#dialog-boxes">
+   Dialog Boxes
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#debug-layers">
+   Debug Layers
+  </a>
+ </li>
+</ul>
+
+    </nav>
+</div>
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Debug Tool</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#data-warnings-and-errors">
+   Data Warnings and Errors
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#debug">
+   Debug
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#conflicts">
+   Conflicts
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#levee-crests">
+   Levee Crests
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#dialog-boxes">
+   Dialog Boxes
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#debug-layers">
+   Debug Layers
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <main id="main-content" role="main">
+                
+              <div>
+                
+  <section id="debug-tool">
+<h1>Debug Tool<a class="headerlink" href="#debug-tool" title="Permalink to this headline">#</a></h1>
+<section id="data-warnings-and-errors">
+<h2>Data Warnings and Errors<a class="headerlink" href="#data-warnings-and-errors" title="Permalink to this headline">#</a></h2>
+<p>The Data Warnings and Error button opens a system that helps the user
+debug data files and search for data conflicts.</p>
+<img alt="../_images/debug.png" src="../_images/debug.png" />
+<ol class="arabic simple">
+<li><p>Perform
+a debug run.</p></li>
+<li><p><a class="reference external" href="Export%20Project.html">Export
+the *.DAT Files</a>.</p></li>
+<li><p>Click the
+Run FLO-2D button.</p></li>
+</ol>
+<img alt="../_images/debug2.png" src="../_images/debug2.png" />
+<ol class="arabic simple" start="4">
+<li><p>This will automatically trigger the FLO-2D check system performed by
+the engine FLOPRO.EXE.</p></li>
+</ol>
+<img alt="../_images/debug3.png" src="../_images/debug3.png" />
+<img alt="../_images/debug4.png" src="../_images/debug4.png" />
+<ol class="arabic simple" start="5">
+<li><p>The model will execute, perform the data checks and then
+automatically shut down. Every time the debug is executed, a new
+debug file with a timestamp is saved to the project folder.</p></li>
+</ol>
+<img alt="../_images/debug5.png" src="../_images/debug5.png" />
+<ol class="arabic simple" start="6">
+<li><p>Click the Error and
+Warning button to open the import dialog box.</p></li>
+</ol>
+<img alt="../_images/debug.png" src="../_images/debug.png" />
+<img alt="../_images/debug6.png" src="../_images/debug6.png" />
+</section>
+<section id="debug">
+<h2>Debug<a class="headerlink" href="#debug" title="Permalink to this headline">#</a></h2>
+<ol class="arabic simple" start="7">
+<li><p>To import the Debug files, click the Import DEBUG File button. The
+DEBUG file will have a date and timestamp to track progress.</p></li>
+</ol>
+<img alt="../_images/debug7.png" src="../_images/debug7.png" />
+<ol class="arabic simple" start="8">
+<li><p>The import process will include several files that can be used to
+help users review surface features such as rim elevations, depressed
+elements and channel – floodplain interface. Click Yes to load the
+Errors and Warning Dialog box and import the review files.</p></li>
+</ol>
+<img alt="../_images/debug8.png" src="../_images/debug8.png" />
+</section>
+<section id="conflicts">
+<h2>Conflicts<a class="headerlink" href="#conflicts" title="Permalink to this headline">#</a></h2>
+<p>The Current Project option will create a list of data conflicts. These
+conflicts are not necessarily errors, they are generated based on the
+conflict matrix. The conflict matrix is located Here:
+c:userspublicdocumentsFLO-2D Pro DocumentationHandoutsConflict
+Matrix.pdf</p>
+</section>
+<section id="levee-crests">
+<h2>Levee Crests<a class="headerlink" href="#levee-crests" title="Permalink to this headline">#</a></h2>
+<p>The final option is Levee Crest validation tool. It is used to review
+the levees and grid element elevations.</p>
+</section>
+<section id="dialog-boxes">
+<h2>Dialog Boxes<a class="headerlink" href="#dialog-boxes" title="Permalink to this headline">#</a></h2>
+<p>The Errors and Warnings Dialog box shows all Errors, Conflicts, and
+Warnings created by the file checking program. All of these boxes can be
+used to sort and view and pan to cells with potential issues.</p>
+<img alt="../_images/debug9.png" src="../_images/debug9.png" />
+<img alt="../_images/debug10.png" src="../_images/debug10.png" />
+<img alt="../_images/debug11.png" src="../_images/debug11.png" />
+</section>
+<section id="debug-layers">
+<h2>Debug Layers<a class="headerlink" href="#debug-layers" title="Permalink to this headline">#</a></h2>
+<p>The layers show points where there are differences between channel bank
+and floodplain bank elevations, rim and floodplain inlet elevations, and
+depressed elements and levee crest elevations. In this example, the
+layers are grouped using a QGIS standard layer grouping procedure.</p>
+<img alt="../_images/debug12.png" src="../_images/debug12.png" />
+<p>Each layer has an attribute table that can be sorted and used to find
+grid elements that may need elevation edits.</p>
+<img alt="../_images/debug13.png" src="../_images/debug13.png" />
+</section>
+</section>
+
+
+              </div>
+              
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+    <a class='left-prev' id="prev-link" href="Mud%20and%20Sediment%20Transport%20Tool.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Mud and Sediment Transport Tool</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="Help.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Help</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            </footer>
+        </div>
+    </div>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By Karen O'Brien<br/>
+  
+      &copy; Copyright 2021, Karen O&#39;Brien.<br/>
+</p>
+        </footer>
+    </div>
+    
+</div>
+
+
+      </div>
+    </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
+
+  </body>
+</html>
